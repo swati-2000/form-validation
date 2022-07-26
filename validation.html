@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" href="style.css" rel="stylesheet"/>
+    <script src="script.js"></script>
+</head>
+<body>
+    <center><h1>Learn Complete From validateform</h1></center>   
+    <hr>
+    <form method="" action="" name="stud_form" onsubmit="return validate()" >
+    <center><h2>Student From</h2></center>
+    <table>
+        <tr>
+            <td>First Name:</td>
+            <td>
+                <input type="text" name="firstname" placeholder="First Name" id="name" onblur="validateString(this.id)">
+            </td>
+        </tr>
+        <tr>
+            <td>Last Name:</td>
+            <td>
+                <input type="text" name="secondname" placeholder="Last Name" id="name" onblur="validateString(this.id)">
+            </td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Fmale">Fmale
+            </td>
+        </tr>
+        <tr>
+            <td>Mobile No:</td>
+            <td>
+                <input type="text" name="mobile" placeholder="Mobile Number" id="mobile" onblur="validateNumber(this.id)">
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>
+                <input type="text" name="email" placeholder="Email Id"id="email" onblur="validateEmail(this.id)">
+            </td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>
+                <input type="password" name="password" placeholde="Enter Password"id="password" onblur="validatePassword(this.id)">
+            </td>  
+                
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td>
+                <textarea  name="address" rows="5" cols="20"  placeholder="Address" id="address" onblur="validateString(this.id)"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>City:</td>
+            <td>
+                <input type="text" name="city" placeholder="City" id="city" onblur="validateString(this.id)">
+            </td>
+        </tr>
+        <tr>
+            <td>State:</td>
+            <td>
+                <input type="text" name="state" placeholder="State" id="state" onblur="validateString(this.id)">
+            </td>
+        </tr>
+        <tr>
+            <td>Country:</td>
+            <td>
+                <input type="text" name="country" placeholder="Country" id="country" onblur="validateString(this.id)">
+            </td>
+        </tr>
+        <tr>
+            <td> Select Course:</td>
+            <td>Computer<input type="radio" name="course" value="Computer">
+                Mechenical<input type="radio" name="course" value="Mechanical">
+                Civil<input type="radio" name="course" value="Civil">
+                
+            </td>
+        </tr>
+        <tr>
+            
+            <td colspan="2" align="center"style="position:relative;left: 114px;"><input type="submit" name="submit" value="Submit">
+                <input type="reset" name="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
